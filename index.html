@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.js"></script>
     <title>Jquery Exercice 1</title>
   </head>
   <body>
@@ -15,8 +16,14 @@
     <button id="bouton1" name="bouton">Cacher</button>
     <button id="bouton2" name="bouton">Montrer</button>
 
-
-  <script src="jquery.js"></script>
+    <script>
+      $("#bouton1").click(function() {
+      $("#texte").hide();
+      });
+      $("#bouton2").click(function() {
+      $("#texte").show();
+      });
+    </script>
 
   </body>
 </html>
